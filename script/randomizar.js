@@ -23,7 +23,6 @@ function randomizarNumero() {
             
             this.limparDisplayRandom()
             this.dado.value = valor
-            console.log("veio aqui")
         },
         limparDisplayRandom(){
             this.dado.value = " "

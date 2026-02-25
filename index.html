@@ -9,123 +9,136 @@
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/rules.css">
     <link rel="stylesheet" href="css/ferramenta.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="assets/LOGO_MINIMALISTA.png" alt="Logo">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#regras">Regras</a></li>
-            <li><a href="#cards">Cards</a></li>
-            <li><a href="#ferramenta">Ferramenta</a></li>
-        </ul>
-    </header>
-    <div id="home">
-        <img class="pedra" src="assets/Pedra_Flutuante.png" alt="Pedra Flutuante">
-        <img class="logo" src="assets/LOGO.png" alt="Logo">
-        <img class="pedra Pverde" src="assets/Pedra_flutuante_V.png" alt="Pedra Flutuante Versão 2">
+    <div class="backGround">
+        <header>
+            <img src="assets/LOGO_MINIMALISTA.png" alt="Logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#ferramenta">Ferramenta</a></li>
+            </ul>
+        </header>
+        <div id="home">
+            <img class="pedra" src="assets/Pedra_Flutuante.png" alt="Pedra Flutuante">
+            <img class="logo" src="assets/LOGO.png" alt="Logo">
+            <img class="pedra Pverde" src="assets/Pedra_flutuante_V.png" alt="Pedra Flutuante Versão 2">
+        </div>
+        <img class="icon azul" src="assets/azul.png" alt="iconAzul">
+        <img class="icon preto" src="assets/preto.png" alt="iconPreto">
+        <img class="icon branco" src="assets/branco.png" alt="iconBranco">
+        <img class="icon verde" src="assets/verde.png" alt="iconVerde">
+        <img class="icon vermelho" src="assets/vermelho.png" alt="iconVermelho">
+        <article id="regras">
+            <h1>Regras</h1>
+            <section>
+                <h2>Objetivo do Jogo</h2>
+                <ul>
+                    <li>20 pontos de vida</li>
+                    <li>Evitar os inimigos.</li>
+                    <li>Alcançar o objetivo final para vencer.</li>
+                </ul>
+                <h2>Você vence quando:</h2>
+                <ul>
+                    <li>O oponente chega a 0 de vida</li>
+                    <li>O oponente compra carta sem ter cartas no deck</li>
+                    <li>Um efeito de carta declara vitória</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Fases do Turno</h2>
+                <ul>
+                    <li>Fase de Compra: Comprar uma carta</li>
+                    <li>Fase Principal: Jogar cartas, atacar, etc.</li>
+                    <li>Fase de Combate: Declarar atacantes e bloqueadores</li>
+                    <li>Segunda Fase Principal: Jogar mais cartas, etc.</li>
+                    <li>Fase Final: Encerrar o turno</li>
+                </ul>
+            </section>
+            <section class="maior">
+                <h2>Tipos de cartas</h2>
+                <ul>
+                    <li>Terreno: (Land) Gera mana</li>
+                    <li>Criatura: (Creature) Ataca e defende</li>
+                    <li>Feitiço: (Sorcery) Efeito único, só no seu turno</li>
+                    <li>Instantânea: (Instant) Pode ser jogada quase a qualquer momento</li>
+                    <li>Encantamento: (Enchantment) Efeito contínuo</li>
+                    <li>Artefato: (Artifact) Efeito contínuo, pode ser destruído por feitiços específicos</li>
+                </ul>
+            </section>
+        </article>
+        <article id="cards">
+            <h1>Cards</h1>
+            <div class="card um"></div>
+            <div class="card dois"></div>
+            <div class="card tres"></div>
+            <div class="card quatro"></div>
+            <div class="card cinco"></div>
+            <div class="card seis"></div>
+            <div class="card sete"></div>
+            <div class="card oito"></div>
+        </article>
     </div>
-    <img class="icon azul" src="assets/azul.png" alt="iconAzul">
-    <img class="icon preto" src="assets/preto.png" alt="iconPreto">
-    <img class="icon branco" src="assets/branco.png" alt="iconBranco">
-    <img class="icon verde" src="assets/verde.png" alt="iconVerde">
-    <img class="icon vermelho" src="assets/vermelho.png" alt="iconVermelho">
-    <article id="regras">
-        <h1>Regras</h1>
-        <section>
-            <h2>Objetivo do Jogo</h2>
-            <ul>
-                <li>20 pontos de vida</li>
-                <li>Evitar os inimigos.</li>
-                <li>Alcançar o objetivo final para vencer.</li>
-            </ul>
-            <h2>Você vence quando:</h2>
-            <ul>
-                <li>O oponente chega a 0 de vida</li>
-                <li>O oponente compra carta sem ter cartas no deck</li>
-                <li>Um efeito de carta declara vitória</li>
-            </ul>
+    <div class="backGroundBaixo">
+        <section id="ferramenta">
+            <h1>Ferramenta</h1>
+            <h3>Esta aba serve para te auxiliar na sua jogatina.</h3>
+
+            <table>
+                <caption>planeswalker 1</caption>
+                <tr>
+                    <th colspan="2">vida</th>
+                    <th colspan="2">mana</th>
+
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" class="display" id="vidaUm"></td>
+                    <td colspan="2"><input type="text" class="display" id="manaUm"></td>
+                </tr>
+                <tr>
+                    <td><button class="btn botaoVidaUm">-1</button></td>
+                    <td><button class="btn botaoVidaUm">+1</button></td>
+                    <td><button class="btn botaoManaUm">-1</button></td>
+                    <td><button class="btn botaoManaUm">+1</button></td>
+            </table>
+            <table>
+                <caption>planeswalker 2</caption>
+                <tr>
+                    <th colspan="2">vida</th>
+                    <th colspan="2">mana</th>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="text" class="display" id="vidaDois"></td>
+                    <td colspan="2"><input type="text" class="display" id="manaDois"></td>
+                </tr>
+                <tr>
+                    <td><button class="btn botaoVidaDois">-1</button></td>
+                    <td><button class="btn botaoVidaDois">+1</button></td>
+                    <td><button class="btn botaoManaDois">-1</button></td>
+                    <td><button class="btn botaoManaDois">+1</button></td>
+
+            </table>
+            <div class="ajuda">
+                <input type="text" class="display" id="randomizaInput">
+                <button class="btnMaior randomizar">Jogar D20</button>
+                <input type="text" class="display" id="turnoInput">
+                <button class="btnMaior turno">Próximo Turno</button>
+            </div>
         </section>
-        <section>
-            <h2>Fases do Turno</h2>
-            <ul>
-                <li>Fase de Compra: Comprar uma carta</li>
-                <li>Fase Principal: Jogar cartas, atacar, etc.</li>
-                <li>Fase de Combate: Declarar atacantes e bloqueadores</li>
-                <li>Segunda Fase Principal: Jogar mais cartas, etc.</li>
-                <li>Fase Final: Encerrar o turno</li>
-            </ul>
-        </section>
-        <section class="maior">
-            <h2>Tipos de cartas</h2>
-            <ul>
-                <li>Terreno: (Land) Gera mana</li>
-                <li>Criatura: (Creature) Ataca e defende</li>
-                <li>Feitiço: (Sorcery) Efeito único, só no seu turno</li>
-                <li>Instantânea: (Instant) Pode ser jogada quase a qualquer momento</li>
-                <li>Encantamento: (Enchantment) Efeito contínuo</li>
-                <li>Artefato: (Artifact) Efeito contínuo, pode ser destruído por feitiços específicos</li>
-            </ul>
-        </section>
-    </article>
-    <article id="cards">
-        <h1>Cards</h1>
-        <div class="card um"></div>
-        <div class="card dois"></div>
-        <div class="card tres"></div>
-        <div class="card quatro"></div>
-        <div class="card cinco"></div>
-        <div class="card seis"></div>
-        <div class="card sete"></div>
-        <div class="card oito"></div>
-    </article>
-    <section id="ferramenta">
-        <h1>Ferramenta</h1>
-        <h3>Esta aba serve para te auxiliar na sua jogatina.</h3>
-
-        <table>
-            <caption>planeswalker 1</caption>
-            <tr>
-                <th colspan="2">vida</th>
-                <th colspan="2">mana</th>
-
-            </tr>
-            <tr>
-                <td colspan="2"><input type="text" id="vidaUm"></td>
-                <td colspan="2"><input type="text" id="manaUm"></td>
-            </tr>
-            <tr>
-                <td><button class="botaoVidaUm">-1</button></td>
-                <td><button class="botaoVidaUm">+1</button></td>
-                <td><button class="botaoManaUm">-1</button></td>
-                <td><button class="botaoManaUm">+1</button></td>
-        </table>
-        <table>
-            <caption>planeswalker 2</caption>
-            <tr>
-                <th colspan="2">vida</th>
-                <th colspan="2">mana</th>
-
-            </tr>
-
-            <tr>
-                <td colspan="2"><input type="text" class="display" id="vidaDois"></td>
-                <td colspan="2"><input type="text" class="display" id="manaDois"></td>
-            </tr>
-            <tr>
-                <td><button class="botaoVidaDois">-1</button></td>
-                <td><button class="botaoVidaDois">+1</button></td>
-                <td><button class="botaoManaDois">-1</button></td>
-                <td><button class="botaoManaDois">+1</button></td>
-
-        </table>
-        <div class="randomizar">
-            <input type="text" id="randomizaInput">
-            <button class="randomizar">Jogar D20</button>
-    </section>
-    <script src="/script/planeswalkerUm.js"></script>
-    <script src="/script/planeswalkerDois.js"></script>
-    <script src="/script/randomizar.js"></script>
+        <footer>
+            <p>Feito por: <a href="https://github.com/erick-amorim377" target="_blank">Erick Amorim</a></p>
+            <p>Direitos autorais reservados © 2024</p>
+        </footer>
+        <script src="/script/planeswalkerUm.js"></script>
+        <script src="/script/planeswalkerDois.js"></script>
+        <script src="/script/randomizar.js"></script>
+        <script src="/script/turno.js"></script>
+    </div>
 </body>
 </html>

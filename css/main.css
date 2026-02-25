@@ -7,10 +7,18 @@
 }
 body{
     font-family: Arial, sans-serif;
+
+    
+}
+.backGround{
     background-image: url('../assets/BACKGROUND.png');
     background-size: cover;
     background-repeat: no-repeat;
-    
+}
+.backGroundBaixo{
+    background: black;
+    width: 100%;
+    height: 100%;
 }
 
 

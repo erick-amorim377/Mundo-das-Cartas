@@ -6,14 +6,14 @@ function planeswalkerUm() {
             this.vidaUm.value = 20;
             this.manaUm.value = 0;
 
-            this.cliqueBnt()
+            this.clickBnt()
         },
         realizarContaMana(e) {
             let mana = this.manaUm.value;
             
 
             try {
-                conta =  eval(mana + e)
+                conta = eval(mana + e)
                 this.limparDisplayMana()
                 this.bntParaDisplayMana(conta)
             } catch (error) {
@@ -33,7 +33,7 @@ function planeswalkerUm() {
             }
             
         },
-        cliqueBnt()   {
+        clickBnt()   {
             document.addEventListener("click", e => {
                 const el = e.target;
                 
@@ -48,7 +48,10 @@ function planeswalkerUm() {
             })
         },
         bntParaDisplayVida(valor){
+            console.log(this.vidaUm.value);
+            console.log(valor);
             this.vidaUm.value += valor
+            console.log(this.vidaUm.value);
 
         },
         bntParaDisplayMana(valor){
