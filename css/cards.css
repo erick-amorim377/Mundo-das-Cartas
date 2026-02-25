@@ -1,0 +1,25 @@
+#cards{
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 60%;
+    height: 70vh;
+    margin: 20px auto;
+    padding: 70px;
+    h1{
+        width: 20%;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid 1px aliceblue ;
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+}
+.card{
+    width: 150px;
+    height: 200px;
+    background-image: url('../assets/cardTras.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+}

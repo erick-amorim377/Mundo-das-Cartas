@@ -1,0 +1,45 @@
+#home{
+    height: 100vh;
+    margin: 0 auto;
+    padding: 100px;
+}
+.logo{
+    z-index: 2;
+    display: block ;
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+    transition: 0.4s ease;
+
+    
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+.pedra{
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    transition: 0.4s ease;
+    margin-right: 100px;
+    
+    animation: flutuar 5s ease-in-out infinite;
+}
+.Pverde{
+    top: 500px;
+    left: 10px;
+    margin-left: 100px;
+    animation: flutuarV 3s ease-in-out infinite;
+}
+@keyframes flutuar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+@keyframes flutuarV {
+    0% { transform: translateY(-20px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(-20px); }
+}
