@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/rules.css">
+    <link rel="stylesheet" href="css/ferramenta.css">
     <title>Document</title>
 </head>
 <body>
@@ -79,6 +80,52 @@
         <div class="card sete"></div>
         <div class="card oito"></div>
     </article>
-    <script src="Script.js"></script>
+    <section id="ferramenta">
+        <h1>Ferramenta</h1>
+        <h3>Esta aba serve para te auxiliar na sua jogatina.</h3>
+
+        <table>
+            <caption>planeswalker 1</caption>
+            <tr>
+                <th colspan="2">vida</th>
+                <th colspan="2">mana</th>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" id="vidaUm"></td>
+                <td colspan="2"><input type="text" id="manaUm"></td>
+            </tr>
+            <tr>
+                <td><button class="botaoVidaUm">-1</button></td>
+                <td><button class="botaoVidaUm">+1</button></td>
+                <td><button class="botaoManaUm">-1</button></td>
+                <td><button class="botaoManaUm">+1</button></td>
+        </table>
+        <table>
+            <caption>planeswalker 2</caption>
+            <tr>
+                <th colspan="2">vida</th>
+                <th colspan="2">mana</th>
+
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="text" class="display" id="vidaDois"></td>
+                <td colspan="2"><input type="text" class="display" id="manaDois"></td>
+            </tr>
+            <tr>
+                <td><button class="botaoVidaDois">-1</button></td>
+                <td><button class="botaoVidaDois">+1</button></td>
+                <td><button class="botaoManaDois">-1</button></td>
+                <td><button class="botaoManaDois">+1</button></td>
+
+        </table>
+        <div class="randomizar">
+            <input type="text" id="randomizaInput">
+            <button class="randomizar">Jogar D20</button>
+    </section>
+    <script src="/script/planeswalkerUm.js"></script>
+    <script src="/script/planeswalkerDois.js"></script>
+    <script src="/script/randomizar.js"></script>
 </body>
 </html>
