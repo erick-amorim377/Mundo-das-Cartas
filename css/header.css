@@ -37,3 +37,30 @@ header{
         }
     }
 }
+@media screen and (max-width: 800px){
+
+    header{
+        height: 50px;
+
+
+        img{
+            height: 40px;
+            margin: 0;
+        }
+        ul{
+
+        margin-left: 0;
+        
+            li{
+                margin-right: 0;
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 900px){
+
+}

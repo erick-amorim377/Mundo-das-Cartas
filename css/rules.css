@@ -1,11 +1,11 @@
 #regras{
     background-color: rgba(0, 0, 0, 0.534);
     width: 60%;
-    height: 70vh;
-    margin: 0 auto;
+    height: auto;
+    margin: 10px auto;
     padding: 70px;
+    box-sizing: border-box;
     h1{
-        width: 20%;
         padding: 5px;
         border-radius: 10px;
         border: solid 1px aliceblue ;
@@ -63,4 +63,96 @@ section{
     50% { transform: scale(1.12); }
     100% { transform: scale(1); }
     
+}
+@media screen and (max-width: 670px){
+    #regras{
+        width: 90%;
+        padding: 20px;
+    }
+    section{
+        width: 90%;
+    }
+    .icon{
+        width: 10px;
+    }
+    .preto{   
+        top: 50px;
+        left: 80px;
+    }
+    .vermelho{
+        top: 120px;
+        right: -350px;
+    }
+    .azul{
+        bottom: -500px;
+        left: 120px;
+    }
+    .branco{
+        bottom: -370px;
+        right: -450px;
+    }
+    .verde{
+        bottom: -630px;
+        left: 150px;
+    }
+}
+@media screen and (max-width: 820px){
+        section{
+        width: 90%;
+    }
+       .icon{
+        width: 60px;
+    }
+        .preto{   
+        top: 50px;
+        left: 80px;
+    }
+        .vermelho{
+        top: 120px;
+        right: -350px;
+    }
+        .azul{
+        bottom: -500px;
+        left: 120px;
+    }
+        .branco{
+        bottom: -370px;
+        right: -450px;
+    }
+}
+@media screen and (max-width: 395px){
+
+    #regras{
+        width: 90%;
+        padding: 20px;
+    }
+    .icon{
+        width: 50px;
+    }
+    section{
+        width: 90%;
+    }
+    .icon{
+        width: 45px;
+    }
+    .preto{   
+        top: 50px;
+        left: -30px;
+    }
+    .vermelho{
+        top: 120px;
+        right: -110px;
+    }
+    .azul{
+        bottom: -500px;
+        left: 5px;
+    }
+    .branco{
+        bottom: -370px;
+        right: -210px;
+    }
+    .verde{
+        bottom: -630px;
+        left: 150px;
+    }
 }

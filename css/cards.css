@@ -1,9 +1,10 @@
 #cards{
     background-color: rgba(0, 0, 0, 0.534);
     width: 60%;
-    height: 80vh;
+    height: auto;
     margin: 0 auto;
     padding: 70px;
+    box-sizing: border-box;
     h1{
         width: 20%;
         padding: 5px;
@@ -57,4 +58,25 @@
 .oito:hover{
     background-image: url(../assets/cards/cardLandGreen.png);
 
+}
+@media screen and (max-width: 820px){
+    #cards{
+        width: 90%;
+        padding: 20px;
+    }
+    .card{
+        width: 120px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 395px){
+    #cards{
+        width: 90%;
+        padding: 20px;
+    }
+    .card{
+        width: 100px;
+        height: 150px;
+    }
+    
 }
